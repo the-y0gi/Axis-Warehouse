@@ -51,17 +51,22 @@ export const SITE_CONTENT = {
     {
         title: "Masterplanned for efficiency & flow",
         desc: "AXIS is designed with a clean, efficient layout—streamlined access, spacious loading.",
-        image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop"
+        image: '../img11.jpeg'
+        // image: "https://images.unsplash.com/photo-1497215728101-856f4ea42174?q=80&w=2070&auto=format&fit=crop"
     },
     {
         title: "Thoughtfully landscaped clarity & balance",
         desc: "A well-planned landscape of canopy trees, pathways, and green buffers enriches the site.",
-        image: "https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?q=80&w=2074&auto=format&fit=crop"
+                image: '../img2.jpeg'
+
+        // image: "https://images.unsplash.com/photo-1464938050520-ef2270bb8ce8?q=80&w=2074&auto=format&fit=crop"
     },
     {
         title: "Architectural excellence refined façades",
         desc: "Crafted with precision detailing and premium materials, the façades project a strong aesthetic.",
-        image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031&auto=format&fit=crop"
+                image: '../img6.jpeg'
+
+        // image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031&auto=format&fit=crop"
     }
   ],
   testimonials: [

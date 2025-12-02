@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { ArrowRight, Box, Layers, Check } from "lucide-react";
+import { image } from "framer-motion/client";
 
 const WAREHOUSE_DATA = [
   // Corner Unit 1 (Unique Size)
@@ -11,6 +12,8 @@ const WAREHOUSE_DATA = [
     warehouse: 232.3,
     office: 74.5,
     status: "Available",
+    // image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop",
+      image:"../img2.jpeg",
     description:
       "High-exposure corner site featuring dual-street frontage and premium first-floor office.",
   },
@@ -22,6 +25,8 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Sold",
+    // image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop",
+    image:"img3.jpeg",
     description:
       "Efficient warehouse layout with modern amenities, perfect for small to medium logistics.",
   },
@@ -32,6 +37,8 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Available",
+    // image: "https://images.unsplash.com/photo-1553413077-190dd305871c?q=80&w=1935&auto=format&fit=crop",
+      image:"../img6.jpeg",
     description:
       "Secure industrial unit offering 179m² of high-clearance storage and smart office integration.",
   },
@@ -42,6 +49,9 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Available",
+    // image: "https://images.unsplash.com/photo-1601598851547-4302969ca066?q=80&w=1974&auto=format&fit=crop",
+      image:"../img7.jpeg",
+
     description:
       "Versatile workspace designed for functionality with direct driveway access.",
   },
@@ -52,6 +62,8 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Reserved",
+    // image: "https://images.unsplash.com/photo-1580674285054-bed31e145f59?q=80&w=2070&auto=format&fit=crop",
+      image:"../img8.jpeg",
     description:
       "Ideal entry-level investment unit featuring robust concrete panel construction.",
   },
@@ -62,6 +74,8 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Available",
+    // image: "https://images.unsplash.com/photo-1565610248-2584b54537d3?q=80&w=2070&auto=format&fit=crop",
+image:"../img4.jpeg",
     description:
       "Centrally located unit optimizing floor space for maximum operational efficiency.",
   },
@@ -73,6 +87,9 @@ const WAREHOUSE_DATA = [
     warehouse: 254.9,
     office: 95.7,
     status: "Available",
+    // image: "https://images.unsplash.com/photo-1628874160365-6a39d6081747?q=80&w=1974&auto=format&fit=crop",
+      image:"../img10.jpeg",
+
     description:
       "Massive flagship suite with expansive 255m² warehousing and deluxe executive office.",
   },
@@ -83,7 +100,9 @@ const WAREHOUSE_DATA = [
     warehouse: 254.9,
     office: 95.7,
     status: "Available",
-    description:
+    // image: "https://images.unsplash.com/photo-1549194388-f61be84a6e9e?q=80&w=2072&auto=format&fit=crop",
+        image:"../img11.jpeg",
+  description:
       "The crown jewel of the estate, offering superior square footage and commanding presence.",
   },
   // Standard Units 9-13 (Identical Sizes)
@@ -94,7 +113,9 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Available",
-    description:
+    // image: "https://images.unsplash.com/photo-1590247813693-5541d1c609fd?q=80&w=2070&auto=format&fit=crop",
+  image:"../img5.jpeg",
+  description:
       "Smart industrial solution with 75m² office space, ideal for growing businesses.",
   },
   {
@@ -104,7 +125,9 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Available",
-    description:
+    // image: "https://images.unsplash.com/photo-1599147996546-942669472077?q=80&w=1974&auto=format&fit=crop",
+     image:"../img9.jpeg",
+ description:
       "High-quality finishes throughout, combining practical storage with professional office presentation.",
   },
   {
@@ -114,6 +137,8 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Available",
+    // image: "https://images.unsplash.com/photo-1565891741441-64926e441838?q=80&w=2071&auto=format&fit=crop",
+image: "../img1.jpeg",
     description:
       "Reliable and robust unit offering excellent vehicle access and turning circles.",
   },
@@ -124,7 +149,9 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Available",
-    description:
+    // image: "https://images.unsplash.com/photo-1616401784845-180882ba9ba8?q=80&w=2070&auto=format&fit=crop",
+       image:"../img2.jpeg",
+   description:
       "Perfectly balanced layout with equal emphasis on storage capacity and staff comfort.",
   },
   {
@@ -134,7 +161,9 @@ const WAREHOUSE_DATA = [
     warehouse: 179.0,
     office: 75.8,
     status: "Available",
-    description:
+    // image: "https://images.unsplash.com/photo-1534237710431-e2fc698436d0?q=80&w=1974&auto=format&fit=crop",
+         image:"../img6.jpeg",
+ description:
       "Final standard unit in the row, offering privacy and streamlined access.",
   },
   // Corner Unit 14 (Unique Size)
@@ -145,7 +174,9 @@ const WAREHOUSE_DATA = [
     warehouse: 239.4,
     office: 63.3,
     status: "Available",
-    description:
+    // image: "https://images.unsplash.com/photo-1605283176970-215d8424374d?q=80&w=2070&auto=format&fit=crop",
+          image:"../img7.jpeg",
+description:
       "Prominent end-of-row position with maximum natural light and 239m² of versatile floor space.",
   },
 ];
@@ -230,10 +261,10 @@ export default function WarehouseListing() {
             </button>
           </div>
 
-          {/* Right Image */}
           <div className="lg:w-1/2 relative min-h-[400px]">
             <img
-              src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+              // src="https://images.unsplash.com/photo-1549194388-f61be84a6e9e?q=80&w=2072&auto=format&fit=crop"
+              src='../img11.jpeg'
               alt="Axis Building Exterior"
               className="absolute inset-0 w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700"
             />
@@ -290,7 +321,7 @@ export default function WarehouseListing() {
               <div className="h-48 bg-[#121212] relative overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] to-transparent z-10" />
                 <img
-                  src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=2070&auto=format&fit=crop"
+                  src={unit.image}
                   className="w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
                   alt="Warehouse Interior"
                 />

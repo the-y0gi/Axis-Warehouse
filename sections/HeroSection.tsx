@@ -7,7 +7,8 @@ export default function HeroSection() {
     <section className="relative pt-24 px-4 md:px-6 pb-12 max-w-[1400px] mx-auto">
       <div className="relative w-full h-[75vh] md:h-[85vh] rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl">
         <img
-          src={SITE_CONTENT.hero.image}
+          // src={SITE_CONTENT.hero.image}
+          src='../img9.jpeg'
           alt="Axis Warehouse Hero"
           className="w-full h-full object-cover transform scale-105 hover:scale-100 transition-transform duration-[2s]"
         />

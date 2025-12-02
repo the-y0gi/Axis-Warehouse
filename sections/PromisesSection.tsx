@@ -8,7 +8,8 @@ export default function PromisesSection() {
     <section className="py-24 max-w-7xl mx-auto px-6">
       <div className="w-full h-[300px] md:h-[400px] rounded-3xl overflow-hidden mb-16 border border-white/10 relative group">
         <img
-          src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+          // src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+          src='../img6.jpeg'
           alt="Architectural Detail"
           className="w-full h-full object-cover opacity-80 group-hover:opacity-100 transition-opacity duration-700"
         />

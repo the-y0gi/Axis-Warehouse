@@ -28,7 +28,8 @@ export default function IntroSection() {
         </div>
         <div className="relative h-[500px] w-full rounded-2xl overflow-hidden border border-white/5 bg-zinc-900 group">
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+            // src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
+            src='../img2.jpeg'
             alt="Axis Building Detail"
             className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out scale-105 group-hover:scale-100"
           />

@@ -8,7 +8,9 @@ export default function WhyChooseSection() {
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20 items-start">
         <div className="order-2 lg:order-1 relative h-[600px] rounded-3xl overflow-hidden border border-white/10 group">
           <img
-            src={SITE_CONTENT.whyChoose.image}
+            // src={SITE_CONTENT.whyChoose.image}
+                        src='../img10.jpeg'
+
             className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 opacity-80 group-hover:opacity-100"
             alt="Why Choose Axis"
           />

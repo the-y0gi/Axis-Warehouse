@@ -29,7 +29,8 @@ export default function DownloadSection() {
           </div>
           <div className="w-32 h-40 bg-zinc-800 rounded-lg overflow-hidden transform -translate-y-4 border border-white/10">
             <img
-              src={SITE_CONTENT.hero.image}
+              // src={SITE_CONTENT.hero.image}
+              src='../img5.jpeg'
               className="w-full h-full object-cover"
             />
           </div>

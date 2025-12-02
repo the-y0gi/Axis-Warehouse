@@ -17,7 +17,8 @@ export default function DesignSection() {
         <div className="grid grid-cols-1 md:grid-cols-4 md:grid-rows-2 gap-4 h-[900px] md:h-[600px]">
           <div className="md:col-span-2 md:row-span-2 relative rounded-xl overflow-hidden group">
             <img
-              src={SITE_CONTENT.bento.images.largeRight}
+              // src={SITE_CONTENT.bento.images.largeRight}
+              src='../img10.jpeg'
               className="w-full h-full object-cover opacity-60 group-hover:opacity-100 transition-opacity duration-700"
             />
             <div className="absolute bottom-6 left-6 text-xl font-bold text-white z-10 uppercase tracking-widest">
@@ -37,13 +38,15 @@ export default function DesignSection() {
           </div>
           <div className="md:col-span-1 md:row-span-1 relative rounded-xl overflow-hidden">
             <img
-              src={SITE_CONTENT.bento.images.tallLeft}
+              // src={SITE_CONTENT.bento.images.tallLeft}
+              src='../img7.jpeg'
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>
           <div className="md:col-span-1 md:row-span-1 bg-[#151515] rounded-xl flex items-center justify-center border border-white/5">
             <img
-              src={SITE_CONTENT.bento.images.bottomWide}
+              // src={SITE_CONTENT.bento.images.bottomWide}
+                            src='../img8.jpeg'
               className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700"
             />
           </div>

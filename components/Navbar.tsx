@@ -36,7 +36,7 @@ export default function Navbar() {
       >
         <div className="max-w-[1400px] mx-auto px-6 flex justify-between items-center">
           
-          {/*LOGO */}
+          {/* axis LOGO */}
           <Link 
             href="/" 
             className="text-2xl font-bold tracking-tighter text-white cursor-pointer hover:opacity-80 transition-opacity"
